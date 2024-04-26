@@ -1,0 +1,322 @@
+/*  Resetting padding and margin to 0. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Setting height and background of body. */
+body {
+  /* background: rgb(34, 193, 195); */
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  min-height: 100svh;
+  padding-bottom: 100px;
+}
+
+/* Setting the width and horizontal position of container. */
+.container {
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+/* Styling the heading */
+.heading {
+  font-size: 50px;
+  margin: 30px 0px;
+  text-align: center;
+}
+
+/* Utility class to align text to center. */
+.text-center{
+  text-align: center
+}
+
+/* Utility class to make font size equal to 18px. */
+.font-16 {
+  font-size: 16px;
+}
+
+/* Utility class to make font size equal to 18px. */
+.font-18 {
+  font-size: 18px;
+}
+
+/* Utility class to make font size equal to 20px. */
+.font-18 {
+  font-size: 20px;
+}
+
+/* Utility class to make font size equal to 22px. */
+.font-18 {
+  font-size: 22px;
+}
+
+/* Utility class to add a margin of 8px along y axis. */
+.my-8 {
+  margin: 8px 0px;
+}
+
+/* Utility class to add a margin of 16px along y axis. */
+.my-16 {
+  margin: 16px 0px;
+}
+
+/* Utility class to add a margin of 8px at bottom. */
+.mb-8{
+  margin-bottom: 8px;
+}
+
+/* Utility class to add a margin of 8px at bottom. */
+.mb-16{
+  margin-bottom: 16px;
+}
+
+/* Utility class to make text black. */
+.font-black {
+  color: black;
+}
+
+/* Styling for Navbar. */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Clear floats after the navbar */
+.navbar::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Styling labels for input fields. */
+label {
+  display: block;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+/* Styling required field and error messages. */
+.error {
+  vertical-align: top;
+  color: red;
+}
+
+/* Styling the input fields */
+input {
+  outline: none;
+  border: none;
+}
+
+/* Styling the text input fields. */
+input[type="text"] {
+  width: 95%;
+  margin: auto;
+  font-size: 25px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: rgba(187, 162, 217,0.81);
+  border: 2px solid black;
+  margin-bottom: 10px;
+}
+
+/* Styling the file input field. */
+input[type="file"] {
+  font-size: 20px;
+  padding: 5px 10px;
+  margin-bottom: 25px;
+}
+
+/* Styling the textarea for inputting Subject|Marks pairs. */
+textarea {
+  width: 95%;
+  margin: auto;
+  min-height: 100px;
+  background-color: rgba(187, 162, 217,0.81);
+  border-radius: 20px;
+  border: 2px solid black;
+  resize: none;
+  outline: none;
+  margin-bottom: 10px;
+  padding: 8px 15px;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+/* Styling the email input field. */
+input[type="email"] {
+  width: 95%;
+  margin: auto;
+  font-size: 25px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: rgba(187, 162, 217,0.81);
+  border: 2px solid black;
+  margin-bottom: 10px;
+}
+
+/* Styling the password input field. */
+input[type="password"] {
+  width: 95%;
+  margin: auto;
+  font-size: 25px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: rgba(187, 162, 217,0.81);
+  border: 2px solid black;
+  margin-bottom: 10px;
+}
+
+/* Styling the submit button. */
+input[type="submit"] {
+  display: block;
+  font-size: 20px;
+  padding: 8px 20px;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+/* Adding margin to indianPhoneNumber label. */
+#indianPhoneNumberLabel {
+  margin-top: 10px;
+}
+
+/* Styling the Phone number field. */
+input[type="tel"] {
+  width: 95%;
+  margin: auto;
+  font-size: 25px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  background-color: rgba(253, 253, 124, 0.808);
+  border: 2px solid black;
+}
+
+/* Hover effect on submit button. */
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: rgb(230, 225, 58);
+}
+
+/* To show Full Name field is disabled on hover. */
+#fullName {
+  cursor: not-allowed;
+}
+
+/* Styling the displayed details. */
+.detail {
+  font-size: 25px;
+  text-transform: capitalize;
+  margin: 25px 0px;
+  text-align: center;
+}
+
+/* Styling the image displayed. */
+.showimage {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  height: 250px;
+}
+
+/* Styling the Subject|Marks table. */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: lightyellow;
+}
+
+/* Styling table headers and data. */
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Giving a background-color to table headers. */
+th {
+  background-color: rgba(253, 253, 124, 0.808);
+}
+
+/* Changing background-color of table rows on hover. */
+tr:hover {
+  background-color: rgba(253, 253, 124, 0.6);
+}
+
+/* Styling logout button. */
+.logoutBtn {
+  background-color: rgb(247, 81, 81);
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: -10px;
+  right: -50px;
+}
+
+/* Adding a hover effect on logout button. */
+.logoutBtn:hover {
+  background-color: red;
+}
+
+/* Styling the logout button's anchor tag. */
+.logoutBtn a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Positioning the page buttons. */
+.pageButtons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 40px 0px;
+}
+
+/* Styling the page buttons. */
+.pageBtn {
+  font-size: 16px;
+  padding: 7px 15px;
+  cursor: pointer;
+  background-color: rgb(1, 134, 1);
+  border: none;
+  border-radius: 5px;
+}
+
+
+/* Styling the add stock button. */
+#addStockBtn {
+  padding: 7px 15px;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(1, 207, 1);
+}
+
+#addStockBtn:hover {
+  background-color: rgb(17, 172, 17);
+}
